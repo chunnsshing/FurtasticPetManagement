@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>Furtastic</title>
+  <meta name="author" content="Joeee, Wenkai, QiaoYi, Chunshing">
+  <meta name="description" content="Pet Management Website">
+  <meta name="keywords" content="Pet, Management, Animal, cat, dog">
+  <link rel="icon" href="assets/img/logo/logo.png">
+
+  <!-- Font Awesome icons -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Core theme CSS-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- AOS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+
+</head>
+
+
+
+<body>
+  <!-- ============== Loader ============== -->
+  <div class="loader_bg">
+    <div class="loader"><img src="assets/animation/loading.gif" alt="" /></div>
+  </div>
+
+  <!-- ============== Navigation Bar ============== -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top topnavbar">
+    <a class="navbar-brand" href="#page-top">
+      <img src="assets/img/logo/furtasticword4black.png" alt="Furtastic" height="60px" width="200px" id="homelogo">
+    </a>
+
+    <div class="sharethis-inline-share-buttons" data-title="I love Furtastic! Visit now at: "></div>
+    <div class="custom_menu-btn">
+      <button class="openbtn" onclick="openNav()">
+        <span class="s-1">
+        </span>
+        <span class="s-2">
+        </span>
+        <span class="s-3">
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Navigation Side Bar -->
+  <div class="navOverlay">
+    <div class="overlay-content">
+      <img src="assets/img/logo/furtasticword4black.png" alt="logo" class="navlogo" width="250rem"
+        style="padding-bottom: 20px;" />
+
+      <ul class="barlist">
+        <li>
+          <img src="assets/icon/home.png" alt="home" class="icon" />
+          <a href="index1.html">Home</a>
+        </li>
+        <li>
+          <img src="assets/icon/about.png" alt="home" class="icon" />
+          <a href="index.html">About</a>
+        </li>
+        <li>
+          <img src="assets/icon/petprofile.png" alt="home" class="icon" />
+          <a href="display-profile.html">Pet Profile</a>
+        </li>
+        <li>
+          <img src="assets/icon/dogbowl.png" alt="Bowl" class="icon" />
+          <a href="adoption-page.html">Pet Adoption</a>
+        </li>
+        <li>
+          <img src="assets/icon/pet.png" alt="Bowl" class="icon" />
+          <a href="rehome-page.html">Pet Rehome</a>
+        </li>
+        <li>
+          <img src="assets/icon/paw.png" alt="Lost" class="icon" />
+          <a href="lost-and-found.html">Lost & Found</a>
+        </li>
+        <li>
+          <img src="assets/icon/appointment.png" alt="Appointment" class="icon" />
+          <a href="appointment.html" class="active">Appointment</a>
+        </li>
+        <li>
+          <img src="assets/icon/pet.png" alt="Appointment" class="icon" />
+          <a href="services.html">Pet Service</a>
+        </li>
+        <li>
+          <img src="assets/icon/event.png" alt="Event" class="icon" />
+          <a href="event.html">Event</a>
+        </li>
+        <li>
+          <img src="assets/icon/gallery.png" alt="Event" class="icon" />
+          <a href="gallery.html">Gallery</a>
+        </li>
+        <li>
+          <img src="assets/icon/instagram.png" alt="Event" class="icon" />
+          <a href="socialmedia.html">Social Media</a>
+        </li>
+        <li>
+          <img src="assets/icon/blog.png" alt="Event" class="icon" />
+          <a href="blog.html">Blog</a>
+        </li>
+        <li>
+          <img src="assets/icon/testimonial.png" alt="Event" class="icon" />
+          <a href="testimonial.html">Testimonial</a>
+        </li>
+        <li>
+          <img src="assets/icon/faq.png" alt="Feedback" class="icon" />
+          <a href="faqs.html">FAQs</a>
+        </li>
+        <li>
+          <img src="assets/icon/email.png" alt="Event" class="icon" />
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============== Hero Section ============== -->
+  <section>
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('assets/img/background/bg-heroindex1.svg');"
+      data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end">
+          <div class="col-md-9 ftco-animate pb-5">
+            <p class="breadcrumbs mb-2"><span class="mr-2"></span>
+              <span>Where Every Pet's Journey is Furtastically Managed
+                <i class="ion-ios-arrow-forward"></i></span>
+            </p>
+            <h1 class="mb-0 bread">Furtastic Appointment</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <!-- ====================== Appointment Section ====================== -->
+  <section id="appointment-section">
+    </div>
+    <section class="display-section text-center" id="services" style="padding-top: 8rem;">
+
+      <div>
+        <div class="container text-center">
+          <div class="row align-items-start">
+            <!--set appointment here -->
+            <div class="col-md-6">
+              <form>
+                <!--Pet Name -->
+                <div class="form-group">
+                  <label for="apname">Pet Name:</label>
+                  <input type="text" class="form-control" id="apname"
+                    placeholder="What is the name of you fluffy friend?">
+                </div>
+                <br>
+
+                <!--Places -->
+                <div class="form-group">
+                  <label for="applace">Appointment place:</label>
+                  <select class="form-control" name="applace" id="applace" placeholder="Places near you">
+                    <option value="furrypet">Furry Pet Centre</option>
+                    <option value="wengkee">Weng Kee Akuarium</option>
+                    <option value="pawprint">Paw Prints</option>
+                    <option value="wangwang">Wang Wang Pet Life Store HQ</option>
+                    <option value="wonderful">Wonderful Petshop & Care</option>
+                    <option value="jwexotic">JW Exotic Pet Kampar</option>
+                    <option value="qpets">Q-Pets Grooming Centre</option>
+                    <option value="catmosphere">Catmosphere Cat Centre</option>
+                    <option value="victorious">Victorious Living Assembly</option>
+                  </select>
+                </div>
+                <br>
+
+                <!--Appointment Type -->
+                <div class="form-group">
+                  <label for="aptype">Appointment type:</label>
+                  <select class="form-control" name="aptype" id="aptype" placeholder="Services provided">
+                    <option value="Grooming">Grooming</option>
+                    <option value="Boarding">Boarding</option>
+                    <option value="Training">Training</option>
+                    <option value="Vaccinations">Vaccinations</option>
+                    <option value="Bodycheck">Body Check</option>
+                    <option value="Others">Others</option>
+                  </select>
+                </div>
+                <br>
+
+                <!--Appointment Date -->
+                <div class="form-group">
+                  <label for="apdate">Appointment Date:</label>
+                  <input type="date" id="apdate" name="apdate">
+                </div>
+                <br>
+
+                <!--Appointment Time -->
+                <div class="form-group">
+                  <label for="aptime">Select a time:</label>
+                  <input type="time" id="aptime" name="aptime">
+                </div>
+                <br>
+
+                <!-- Create Appointment button-->
+                <button id="create-new-appointment" type="button" class="btn btn-primary btn-block">Create New
+                  Appointment</button>
+              </form>
+            </div>
+
+            <!--show all appointments here-->
+            <div class="container col-md-6">
+              <div id="show-appointment" class="col" class="container">
+                <h1>Your Appointments Made</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <!-- ====================== Display ====================== -->
+  <section class="display-section text-center" id="display" style="padding-bottom: 8rem; background-color: #e0d6c6;">
+    <div class="text container">
+      <p class="text-black" id="sameline">Furtastic is</p>
+      <p id="sameline">
+        <span class="word wisteria"> caring.</span>
+        <span class="word belize"> efficient.</span>
+        <span class="word pomegranate"> reliable.</span>
+        <span class="word green"> tailored.</span>
+        <span class="word midnight"> Furtastic.</span>
+      </p>
+    </div>
+  </section>
+
+  <!--  ====================== FOOTER ====================== -->
+  <footer class="footer small text-center text-white-50">
+    <div class="container-fluid waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <div class="social d-flex justify-content-center align-items-center">
+      <a class="mx-2" href="https://instagram.com/_furrtastic_?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><i
+          class="fab fa-instagram"></i></a>
+      <a class="mx-2" href="https://twitter.com/Furtastic2023"><img src="assets/icon/twitter.svg" alt=""
+          style="width: 1.5rem; height: 1.5rem; padding-bottom: 5px;" /></a>
+      <a class="mx-2" href="https://www.facebook.com/furtastic.2023?mibextid=ZbWKwL"><i
+          class="fab fa-facebook-f"></i></a>
+      <a class="mx-2" href="https://pin.it/7Gfff5a"><i class="fab fa-pinterest"></i></a>
+      <a class="mx-2" href="https://github.com/wthislifehuh/Furtastic"><i class="fab fa-github"></i></a>
+      <a class="mx-2" href="https://t.me/furtastic2023"><i class="fab fa-telegram"></i></a>
+    </div>
+    <div class="container px-4 px-lg-5">
+      <p>
+        &copy; Furtastic 2023 | All Rights Reserved
+      </p>
+    </div>
+  </footer>
+  <!-- END OF FOOTER -->
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+  <script src="js/todo.js"></script>
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- JS for Login POP UP -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="js/login_register.js"></script>
+  <!-- Subscribe Form API -->
+  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  <!-- Subscribe Social Media Plugins -->
+  <script type="text/javascript"
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=6504b58b572cd20019e849c8&product=inline-share-buttons&source=platform"
+    async="async"></script>
+
+
+  <script type="text/javascript">
+    /* ===============================================
+    Toggle Side Bar
+    ============================================== */
+
+    function openNav() {
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
+
+      var navOverlay = document.querySelector(".navOverlay");
+      var shareButtons = document.querySelector(".sharethis-inline-share-buttons");
+
+      navOverlay.classList.toggle("menu_width");
+
+      if (navOverlay.classList.contains("menu_width")) {
+        shareButtons.style.display = "none";
+      } else {
+        shareButtons.style.display = "block";
+      }
+    }
+  </script>
+  <script>
+    //button listeners
+    $("#create-new-appointment").click(function () {
+      //get value
+      var appointment = {
+        owner: currentUser.uid,
+        name: $("#apname").val(),
+        place: $("#applace :selected").val(),
+        type: $("#aptype :selected").val(),
+        date: $("#apdate").val(),
+        time: $("#aptime").val(),
+      }
+      addapptodb(a);
+    });
+
+    $(document).on("click", ".delete-app", function () {
+      var appID = $(this).attr('id');
+      firebase.database().ref("app." + appID).remove();
+    });
+
+
+
+    function addapptodb(a) {
+      //write this data to the database
+      firebase.database().ref("app/" + a.id).set(a);
+      firebase.database().ref("users/" + currentUser.uid + "/app/" + a.id).set(a);
+    }
+
+    var appref = firebase.database().ref().child("appointment");
+    appref.on("value", function (snapshot) {
+      $("#show-appointment").empty();
+      var appHTMLitem = "<h3>Here are all the appointments in the database</h3>";
+
+      snapshot.forEach(function (childsnapshot) {
+        var item = childsnapshot.val();
+        appHTMLitem += "<div class'appHTMLitem'><hr><ul>";
+        appHTMLitem += "<li>Pet Name:<spam>" + item.apname + "</span></li>";
+        appHTMLitem += "<li>Appointment Place:<spam>" + item.applace + "</span></li>";
+        appHTMLitem += "<li>Appointment Type: <spam>" + item.aptype + "</span></li>";
+        appHTMLitem += "<li>Appointment Date: <spam>" + item.apdate + "</span></li>";
+        appHTMLitem += "<li>Appointment Time: <spam>" + item.aptime + "</span></li>";
+        appHTMLitem += "<ul></div>";
+        appHTMLitem += "<button type = 'button' class='btn btn-danger delete-app' id=' " + item.id + " ' >Delete Me</button>";
+      });
+      $("#show-appointments").html(appHTMLitem);
+    });
+
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        //User is signed in
+        var email = user.email;
+        currentUser = user;
+        writeUserData(user);
+        console.log("Set appointment with" + currentUser.email + "user signed in!");
+      }
+      else {
+        alert("User is not signed in");
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>Furtastic Adoption</title>
+  <meta name="author" content="Joeee, Wenkai, QiaoYi, Chunshing">
+  <meta name="description" content="Pet Management Website">
+  <meta name="keywords" content="Pet, Management, Animal, cat, dog">
+  <link rel="icon" href="assets/img/logo/logo.png">
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome icons -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+  <!-- Core theme CSS-->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="css/rehome-page.css" />
+
+</head>
+
+<body>
+  <!-- Header -->
+  <!-- ============== Loader ============== -->
+  <div class="loader_bg">
+    <div class="loader"><img src="assets/animation/loading.gif" alt="" /></div>
+  </div>
+
+  <!-- ============== Navigation Bar ============== -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top topnavbar">
+    <a class="navbar-brand" href="#page-top">
+      <img src="assets/img/logo/furtasticword4black.png" alt="Furtastic" height="60px" width="200px" id="homelogo">
+    </a>
+    <div class="sharethis-inline-share-buttons" data-title="I love Furtastic! Visit now at: "></div>
+    <div class="custom_menu-btn">
+      <button class="openbtn" onclick="openNav()">
+        <span class="s-1">
+        </span>
+        <span class="s-2">
+        </span>
+        <span class="s-3">
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Navigation Side Bar 2 -->
+  <div class="navOverlay">
+    <div class="overlay-content">
+      <img src="assets/img/logo/furtasticword4black.png" alt="logo" class="navlogo" width="250rem"
+        style="padding-bottom: 20px;" />
+
+      <ul class="barlist">
+        <li>
+          <img src="assets/icon/about.png" alt="home" class="icon" />
+          <a href="index.html">About</a>
+        </li>
+        <li>
+          <img src="assets/icon/dogbowl.png" alt="Bowl" class="icon" />
+          <a href="adoption-page.html">Pet Adoption</a>
+        </li>
+        <li>
+          <img src="assets/icon/pet.png" alt="Bowl" class="icon" />
+          <a href="rehome-page.html">Pet Rehome</a>
+        </li>
+        <li>
+          <img src="assets/icon/paw.png" alt="Lost" class="icon" />
+          <a href="lost-and-found.html">Lost & Found</a>
+        </li>
+        <li>
+          <img src="assets/icon/event.png" alt="Event" class="icon" />
+          <a href="event.html">Event</a>
+        </li>
+        <li>
+          <img src="assets/icon/gallery.png" alt="Event" class="icon" />
+          <a href="gallery.html">Gallery</a>
+        </li>
+        <li>
+          <img src="assets/icon/instagram.png" alt="Event" class="icon" />
+          <a href="socialmedia.html">Social Media</a>
+        </li>
+        <li>
+          <img src="assets/icon/blog.png" alt="Event" class="icon" />
+          <a href="blog.html">Blog</a>
+        </li>
+        <li>
+          <img src="assets/icon/testimonial.png" alt="Event" class="icon" />
+          <a href="testimonial.html">Testimonial</a>
+        </li>
+        <li>
+          <img src="assets/icon/faq.png" alt="Feedback" class="icon" />
+          <a href="faqs.html">FAQs</a>
+        </li>
+        <li>
+          <img src="assets/icon/email.png" alt="Event" class="icon" />
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- End of header -->
+
+  <!-- Hero section -->
+  <div class="hero d-flex align-items-center justify-content-start vw-99 vh-100"
+    style="background-image: url(assets/img/background/rehome-page-banner.png);">
+    <div class="container">
+      <div class="row">
+        <div class="hero-content col-md-12 col-xm-12 mx-auto">
+
+          <!-- Subheading -->
+          <span class="d-block mb-5" id="subheading">
+            <h3>Be an angel for pets</h3>
+          </span>
+          <!-- End of subheading -->
+
+          <!-- Heading -->
+          <h1 class="display-3 mb-4">
+            Welcome To <br />
+            <span id="heading">Rehome Programme</span>
+          </h1>
+          <!-- End of heading -->
+
+          <!-- Description -->
+          <p class="mb-4" id="description">
+            Rescue & rehome pets. <br />
+            Let's help them find their forever home.
+          </p>
+          <!-- End of description -->
+
+          <!-- Button -->
+          <div class="mt-5">
+            <a href="#form" class="btn px-5 py-3">Get Started</a>
+          </div>
+          <!-- End of button -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of hero section -->
+
+
+  <!-- Section break -->
+  <section id="section-break">
+
+  </section>
+  <!-- End of section break -->
+
+  <!-- Page content -->
+  <section id="page-content" style="padding-bottom: 7rem;">
+    <div class="container d-flex justify-content-center align-items-center">
+      <form class="p-4 m-5 rounded-5 vw-100 needs-validation" id="form" novalidate>
+
+        <!-- First name -->
+        <div class="mb-5">
+          <label for="firstName" class="form-label">
+            <h5>First Name</h5>
+          </label>
+          <input type="text" class="form-control" id="firstName" required />
+          <div class="invalid-feedback">
+            Please enter your first name
+          </div>
+          <div class="valid-feedback">
+            Looks great!
+          </div>
+        </div>
+        <!-- End of first name -->
+
+        <!-- Last name -->
+        <div class="mb-5">
+          <label for="lastName" class="form-label">
+            <h5>Last Name</h5>
+          </label>
+          <input type="text" class="form-control" id="lastName" required />
+          <div class="invalid-feedback">
+            Please enter your last name
+          </div>
+          <div class="valid-feedback">
+            Looks great!
+          </div>
+        </div>
+        <!-- End of last name -->
+
+        <!-- Email -->
+        <div class="mb-5">
+          <label for="email" class="form-label">
+            <h5>Email Address</h5>
+          </label>
+          <input type="email" class="form-control" id="email" placeholder="email@example.com" autocomplete="email"
+            required />
+          <div class="invalid-feedback">
+            Please enter your email
+          </div>
+          <div class="valid-feedback">
+            Looks great!
+          </div>
+        </div>
+        <!-- End of email -->
+
+        <!-- Telephone No. -->
+        <div class="mb-5">
+          <label for="contactNo" class="form-label">
+            <h5>Contact No.</h5>
+          </label>
+          <input type="tel" class="form-control" id="contactNo" placeholder="XXX-XXXXXXXX"
+            pattern="^\d{3}-\d{7}|\d{3}-\d{8}$" required />
+          <div class="invalid-feedback">
+            Please enter your contact no. in the correct format
+          </div>
+          <div class="valid-feedback">
+            Looks great!
+          </div>
+        </div>
+        <!-- End of telephone no. -->
+
+        <!-- ===== Pet information ===== -->
+        <hr>
+
+        <!-- Pet name -->
+        <div class="mb-5">
+          <label for="petName" class="form-label">
+            <h5>Pet Name</h5>
+          </label>
+          <input type="text" class="form-control" id="petName" required />
+          <div class="invalid-feedback">
+            Please enter the pet name
+          </div>
+          <div class="valid-feedback">
+            Looks great!
+          </div>
+        </div>
+        <!-- End of pet name -->
+
+        <!-- Pet gender -->
+        <div class="mb-5">
+          <label for="petGender" class="form-label">
+            <h5>Pet gender</h5>
+          </label>
+          <select class="form-select" id="petGender" required>
+            <option selected="male">Male</option>
+            <option value="female">Female</option>
+            <option value="notSure">Not sure</option>
+          </select>
+          <div class="valid-feedback">
+            Looks great!
+          </div>
+        </div>
+        <!-- End of pet gender -->
+
+        <!-- Pet species -->
+        <div class="mb-5">
+          <label for="petSpecies" class="form-label">
+            <h5>Pet Species</h5>
+          </label>
+          <input type="text" class="form-control" id="petSpecies" required />
+          <div class="invalid-feedback">
+            Please enter the pet species
+          </div>
+          <div class="valid-feedback">
+            Looks great!
+          </div>
+        </div>
+        <!-- End of pet species -->
+
+        <!-- Location -->
+        <div class="mb-5">
+          <label for="location" class="form-label">
+            <h5>Location</h5>
+          </label>
+          <textarea type="text" class="form-control" id="location" rows="2"
+            placeholder="Tell us about the location where the pet can be found" required></textarea>
+          <div class="invalid-feedback">
+            Please enter the location where the pet can be found
+          </div>
+          <div class="valid-feedback">
+            Looks great!
+          </div>
+        </div>
+        <!-- End of location -->
+
+        <!-- Story -->
+        <div class="mb-5">
+          <label for="story" class="form-label">
+            <h5>Story</h5>
+          </label>
+          <textarea type="text" class="form-control" id="story" rows="3"
+            placeholder="Tell us more about the story of the pet" required></textarea>
+          <div class="invalid-feedback">
+            Please enter the story to describe about the pet
+          </div>
+          <div class="valid-feedback">
+            Looks great!
+          </div>
+        </div>
+        <!-- End of story -->
+
+        <!-- Pet photo -->
+        <div class="mb-5">
+          <label for="petPhoto" class="form-label">
+            <h5>Pet Photo</h5>
+          </label>
+          <input class="form-control" type="file" accept=".png, .jpeg, .jpg" id="petPhoto"
+            onchange="encodeImageFileAsURL();" required>
+          <div class="invalid-feedback">
+            Upload the photo of the pet
+          </div>
+          <div class="valid-feedback">
+            Looks great!
+          </div>
+        </div>
+        <!-- End of pet photo -->
+
+        <!-- Terms and condition -->
+        <div class="mb-5">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              By submitting this form, I hereby understand and agree to the terms and conditions.
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <!-- End of terms and condition -->
+
+        <!-- Submit button -->
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn" id="submitBtn">Submit</button>
+        </div>
+        <!-- End of submit button -->
+
+        <!-- Clear button -->
+        <div class="d-flex justify-content-center">
+          <button type="reset" class="btn" id="clearBtn">Clear</button>
+        </div>
+        <!-- End of clear button -->
+
+      </form>
+    </div>
+  </section>
+  <!-- End of page content -->
+
+
+
+  <!--  ====================== FOOTER ====================== -->
+  <footer class="footer small text-center text-white-50">
+    <div class="container-fluid waves" style="background: url(assets/img/background/wave.png);">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <div class="social d-flex justify-content-center align-items-center">
+      <a class="mx-2" href="https://instagram.com/_furrtastic_?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><i
+          class="fab fa-instagram"></i></a>
+      <a class="mx-2" href="https://twitter.com/Furtastic2023"><img src="assets/icon/twitter.svg" alt=""
+          style="width: 1.5rem; height: 1.5rem; padding-bottom: 5px;" /></a>
+      <a class="mx-2" href="https://www.facebook.com/furtastic.2023?mibextid=ZbWKwL"><i
+          class="fab fa-facebook-f"></i></a>
+      <a class="mx-2" href="https://pin.it/7Gfff5a"><i class="fab fa-pinterest"></i></a>
+      <a class="mx-2" href="https://github.com/wthislifehuh/Furtastic"><i class="fab fa-github"></i></a>
+      <a class="mx-2" href="https://t.me/furtastic2023"><i class="fab fa-telegram"></i></a>
+    </div>
+    <div class="container px-4 px-lg-5">
+      <p>
+        &copy; Furtastic 2023 | All Rights Reserved
+      </p>
+    </div>
+  </footer>
+  <!-- END OF FOOTER -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- Firebase -->
+  <script type="module">
+    // Import Firebase SDKs via CDN
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+
+    // Web app configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAKa8f-TyVyCJ_qpkWtpCul9rRk1Gy8d2k",
+      authDomain: "furtastic-16c9d.firebaseapp.com",
+      databaseURL: "https://furtastic-16c9d-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "furtastic-16c9d",
+      storageBucket: "furtastic-16c9d.appspot.com",
+      messagingSenderId: "914223496279",
+      appId: "1:914223496279:web:57e2c3956de844169e3712"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+
+  <!-- Javascript file -->
+  <script type="module" src="js/rehome-page.js"></script>
+
+  <!-- Subscribe Social Media Plugins -->
+  <script type="text/javascript"
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=6504b58b572cd20019e849c8&product=inline-share-buttons&source=platform"
+    async="async"></script>
+
+  <!-- Encode image file -->
+  <script type='text/javascript'>
+    function encodeImageFileAsURL() {
+
+      var filesSelected = document.getElementById("petPhoto").files;
+      if (filesSelected.length > 0) {
+        var fileToLoad = filesSelected[0];
+        var fileReader = new FileReader();
+
+        fileReader.onload = function (fileLoadedEvent) {
+          var srcData = fileLoadedEvent.target.result; // <--- data: base64
+          petPhotoEncoded = srcData.split(',')[1];
+          sessionStorage.setItem("petPhotoEncoded", petPhotoEncoded);
+        }
+        fileReader.readAsDataURL(fileToLoad);
+      }
+    }
+  </script>
+
+  <!-- Custom JS -->
+  <script>
+    /* ===============================================
+    Toggle Side Bar
+    ============================================== */
+    function openNav() {
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
+
+      var navOverlay = document.querySelector(".navOverlay");
+      var shareButtons = document.querySelector(".sharethis-inline-share-buttons");
+
+      navOverlay.classList.toggle("menu_width");
+
+      if (navOverlay.classList.contains("menu_width")) {
+        shareButtons.style.display = "none";
+      } else {
+        shareButtons.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Furtastic Pet Profile</title>
+    <meta name="author" content="Joeee, Wenkai, QiaoYi, Chunshing">
+    <meta name="description" content="Pet Management Website">
+    <meta name="keywords" content="Pet, Management, Animal, cat, dog">
+    <link rel="icon" href="assets/img/logo/logo.png">
+
+    <!-- ==========================================================
+                CSS
+    ========================================================== -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Font style -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Datepicker -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- Core theme CSS-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- AOS Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body class="sub_page">
+    <div class="hero_area ">
+        <!-- ============== Loader ==============
+        <div class="loader_bg">
+            <div class="loader"><img src="assets/animation/loading.gif" alt="" /></div>
+        </div> -->
+
+        <!-- ============== Save successfully Message ============== -->
+        <div class="modal fade" id="saveMessage" tabindex="-1" aria-labelledby="cookieconsentLabel2" aria-hidden="true"
+            data-mdb-backdrop="static" data-mdb-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-success text-white">
+                        <h5 class="modal-title">Successfully save</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-3 d-flex align-items-center justify-content-center">
+                                <i class="fa-regular fa-4x fa-floppy-disk"></i>
+                            </div>
+                            <div class="col-9">
+                                <p id="saveMsg">Your Pet's Information has been successfully saved!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success register" id="saveok" data-mdb-dismiss="modal">
+                            Okay
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============== Navigation Bar ============== -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top topnavbar">
+            <a class="navbar-brand" href="#page-top">
+                <img src="assets/img/logo/furtasticword4black.png" alt="Furtastic" height="60px" width="200px"
+                    id="homelogo">
+            </a>
+            <div class="sharethis-inline-share-buttons" data-title="I love Furtastic! Visit now at: "></div>
+            <div class="custom_menu-btn">
+                <button class="openbtn" onclick="openNav()">
+                    <span class="s-1">
+                    </span>
+                    <span class="s-2">
+                    </span>
+                    <span class="s-3">
+                    </span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Navigation Side Bar -->
+        <div class="navOverlay">
+            <div class="overlay-content">
+                <img src="assets/img/logo/furtasticword4black.png" alt="logo" class="navlogo" width="250rem"
+                    style="padding-bottom: 20px;" />
+
+                <ul class="barlist">
+                    <li>
+                        <img src="assets/icon/home.png" alt="home" class="icon" />
+                        <a href="index1.html">Home</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/about.png" alt="home" class="icon" />
+                        <a href="index.html">About</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/petprofile.png" alt="home" class="icon" />
+                        <a href="display-profile.html" class="active">Pet Profile</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/dogbowl.png" alt="Bowl" class="icon" />
+                        <a href="adoption-page.html">Pet Adoption</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/pet.png" alt="Bowl" class="icon" />
+                        <a href="rehome-page.html">Pet Rehome</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/paw.png" alt="Lost" class="icon" />
+                        <a href="lost-and-found.html">Lost & Found</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/appointment.png" alt="Appointment" class="icon" />
+                        <a href="appointment.html">Appointment</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/pet.png" alt="Appointment" class="icon" />
+                        <a href="services.html">Pet Service</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/event.png" alt="Event" class="icon" />
+                        <a href="event.html">Event</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/gallery.png" alt="Event" class="icon" />
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/instagram.png" alt="Event" class="icon" />
+                        <a href="socialmedia.html">Social Media</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/blog.png" alt="Event" class="icon" />
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/testimonial.png" alt="Event" class="icon" />
+                        <a href="testimonial.html">Testimonial</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/faq.png" alt="Feedback" class="icon" />
+                        <a href="faqs.html">FAQs</a>
+                    </li>
+                    <li>
+                        <img src="assets/icon/email.png" alt="Event" class="icon" />
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- ============== Hero Section ============== -->
+        <section>
+            <section class="hero-wrap hero-wrap-2"
+                style="background-image: url('assets/img/background/bg-heroindex1.svg');"
+                data-stellar-background-ratio="0.5">
+                <div class="container">
+                    <div class="row no-gutters slider-text align-items-end">
+                        <div class="col-md-9 ftco-animate pb-5">
+                            <p class="breadcrumbs mb-2"><span class="mr-2"></span>
+                                <span>Where Every Pet's Journey is Furtastically Managed
+                                    <i class="ion-ios-arrow-forward"></i></span>
+                            </p>
+                            <h1 class="mb-0 bread">Furtastic Pet Profile</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- ====================== Profile Section ====================== -->
+        <section id="profile-section">
+            <div class="container light-style flex-grow-1 container-p-y">
+                <!-- Title -->
+                <h4 class="font-weight-bold py-3 mb-4">
+                    PET PROFILE
+                </h4>
+
+                <!-- Card -->
+                <div class="card overflow-hidden" id="profilecard" style="border-radius: 40px;">
+                    <!-- Row -->
+                    <div class="row no-gutters row-bordered row-border-light">
+
+                        <!-- Left Card -->
+                        <div class="col-md-3 pt-0 " id="leftcard">
+                            <!-- Header -->
+                            <div class="container align-items-center justify-content-center">
+                                <img src="assets/img/logo/furtasticword4black.png" alt="Furtastic" height="60px"
+                                    width="200px" id="homelogo"
+                                    style="margin-top: 3rem; margin-left: 1rem; margin-bottom: 2rem;">
+                            </div>
+                            <h6 style="color: white; padding-left: 3rem; padding-bottom: 1rem;"> About Your Pet
+                            </h6>
+                            <!-- Items -->
+                            <div class="list-group list-group-flush account-settings-links">
+                                <p class="list-group-item list-group-item-action active" data-toggle="list">
+                                    <img src="assets/icon/pet.png" alt="Appointment" class="icon" />
+                                    Pet Type
+                                </p>
+                                <p class="list-group-item list-group-item-action" data-toggle="list">
+                                    <img src="assets/icon/paw.png" alt="Lost" class="icon" />
+                                    Pet Basics
+                                </p>
+                                <p class="list-group-item list-group-item-action" data-toggle="list">
+                                    <img src="assets/icon/dogbowl.png" alt="Bowl" class="icon" />
+                                    Pet Details
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Right Card -->
+                        <div class="col-md-9">
+                            <div class="tab-content">
+                                <div class="tab-pane fade active show px-5 pt-5" id="account-general">
+                                    <div class="card-body media">
+
+                                        <!-- Settings -->
+                                        <a id="editProfileBtn" href="edit-profile.html">
+                                            <i class="fa-solid fa-gear fa-2x"></i>
+                                        </a>
+
+                                        <!-- Profile Photo -->
+                                        <div class="container">
+                                            <div class="pic-holder">
+                                                <!-- uploaded pic shown here -->
+                                                <img id="profilePic" class="pic"
+                                                    src="assets/img/logo/furtasticlogo.png">
+                                                <Input class="uploadProfileInput" type="file" name="profile_pic"
+                                                    id="newProfilePhoto" accept="image/*" style="opacity: 0;" />
+                                                <label for="newProfilePhoto" class="upload-file-block">
+                                                    <div class="text-center">
+                                                        <div class="mb-2">
+                                                            <i class="fa fa-camera fa-2x"></i>
+                                                        </div>
+                                                        <div class="text-uppercase">
+                                                            Update <br /> Profile Photo
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                </hr>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body px-3 pb-5">
+                                        <div class="row">
+
+                                            <!-- Pet Type -->
+                                            <div class="col-md-6 form-group" style="margin-top: 12rem;">
+                                                <label class="form-label">🐶Pet Species</label>
+                                                <p id="petSpecies"> - </p>
+                                            </div>
+
+                                            <!-- Breed -->
+                                            <div class="col-md-6 form-group" style="margin-top: 12rem;">
+                                                <label class="form-label">🐱Breed</label>
+                                                <p id="breed"> - </p>
+                                            </div>
+
+                                            <!-- Name -->
+                                            <div class="col-md-6 form-group">
+                                                <label class="form-label">🐰Name</label>
+                                                <p id="petName"> - </p>
+                                            </div>
+
+                                            <!-- Birthday -->
+                                            <div class="col-md-6 form-group">
+                                                <label class="form-label">👑Birthday</label>
+                                                <p id="petBirthday"> - </p>
+                                            </div>
+
+                                            <!-- Gender -->
+                                            <div class="col-md-6 form-group">
+                                                <label class="form-label">🐣Gender</label>
+                                                <p id="petGender"> - </p>
+                                            </div>
+
+                                            <!-- Weight -->
+                                            <div class="col-md-6 form-group">
+                                                <label class="form-label">⚖️Weight</label>
+                                                <p id="weight"> - </p>
+                                            </div>
+
+                                            <!-- Neutered -->
+                                            <div class="col-md-6 form-group">
+                                                <label class="form-label" style="padding-top: 2rem;">💉Spayed or
+                                                    Neutered</label>
+                                                <p id="neutered"> - </p>
+                                            </div>
+
+                                            <!-- Text Area -->
+                                            <div class="mb-3">
+                                                <label for="diet" class="form-label"
+                                                    style="padding-top: 2rem;">🥣Dietary Preference</label>
+                                                <p id="diet"> - </p>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="behavior" class="form-label">🍼Behavioral Traits</label>
+                                                <p id="behavior"> - </p>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="medicalhistory" class="form-label">💊Medical
+                                                    History</label>
+                                                <p id="medicalHistory"> - </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="alignment" style="color: #EFEBE0"></div>
+
+
+
+        <!--  ====================== FOOTER ====================== -->
+        <footer class="footer small text-center text-white-50">
+            <div class="container-fluid waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <div class="social d-flex justify-content-center align-items-center">
+                <a class="mx-2" href="https://instagram.com/_furrtastic_?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="mx-2" href="https://twitter.com/Furtastic2023"><img src="assets/icon/twitter.svg" alt=""
+                        style="width: 1.5rem; height: 1.5rem; padding-bottom: 5px;" /></a>
+                <a class="mx-2" href="https://www.facebook.com/furtastic.2023?mibextid=ZbWKwL"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="mx-2" href="https://pin.it/7Gfff5a"><i class="fab fa-pinterest"></i></a>
+                <a class="mx-2" href="https://github.com/wthislifehuh/Furtastic"><i class="fab fa-github"></i></a>
+                <a class="mx-2" href="https://t.me/furtastic2023"><i class="fab fa-telegram"></i></a>
+            </div>
+            <div class="container px-4 px-lg-5">
+                <p>
+                    &copy; Furtastic 2023 | All Rights Reserved
+                </p>
+            </div>
+        </footer>
+        <!-- END OF FOOTER -->
+
+        <!-- ==========================================================
+                JavaScript
+        ========================================================== -->
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+        <!-- Core theme JS-->
+        <script type="module" src="js/scripts.js"></script>
+        <!-- Subscribe Social Media Plugins -->
+        <script type="text/javascript"
+            src="https://platform-api.sharethis.com/js/sharethis.js#property=6504b58b572cd20019e849c8&product=inline-share-buttons&source=platform"
+            async="async"></script>
+
+        <!-- Datepicker JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+        </script>
+
+
+        <!-- Custom JS -->
+        <script type="text/javascript">
+            /* ===============================================
+            Toggle Side Bar
+            ============================================== */
+            function openNav() {
+                document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
+
+                var navOverlay = document.querySelector(".navOverlay");
+                var shareButtons = document.querySelector(".sharethis-inline-share-buttons");
+
+                navOverlay.classList.toggle("menu_width");
+
+                if (navOverlay.classList.contains("menu_width")) {
+                    shareButtons.style.display = "none";
+                } else {
+                    shareButtons.style.display = "block";
+                }
+            }
+
+
+            /* ===============================================
+                Profile Picture
+            ============================================== */
+            // Check if there's a stored profile picture in local storage
+            const storedProfilePicture = localStorage.getItem("profilePicture");
+
+            if (storedProfilePicture) {
+                // Display the stored profile picture
+                $(".pic").attr("src", storedProfilePicture);
+            }
+            else {
+                $(".pic").attr("src", "assets/img/logo/furtasticlogo.png");
+            }
+
+            $(document).on("change", ".uploadProfileInput", function () {
+                const triggerInput = this;
+                const holder = $(this).closest(".pic-holder");
+                const wrapper = $(this).closest(".profile-pic-wrapper");
+                const files = this.files;
+
+                // Remove any existing alert messages
+                $(wrapper).find('[role="alert"]').remove();
+
+                if (!files.length || !window.FileReader) {
+                    return;
+                }
+
+                if (!/^image/.test(files[0].type)) {
+                    // Display an error message for invalid file type
+                    $(wrapper).append(
+                        '<div class="alert alert-danger d-inline-block p-2 small" role="alert">Please choose a valid image.</div>'
+                    );
+                    setTimeout(() => {
+                        $(wrapper).find('[role="alert"]').remove();
+                    }, 3000);
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.readAsDataURL(files[0]);
+
+                reader.onloadend = function () {
+                    // Display a loading spinner during the upload process
+                    holder.addClass("uploadInProgress");
+                    holder.find(".pic").attr("src", this.result);
+                    holder.append(
+                        '<div class="upload-loader"><div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div></div>'
+                    );
+
+                    // Simulate an asynchronous upload process
+                    setTimeout(() => {
+                        holder.removeClass("uploadInProgress");
+                        holder.find(".upload-loader").remove();
+
+                        // If upload is successful
+                        if (Math.random() < 0.9) {
+                            $(wrapper).append(
+                                '<div class="snackbar show" role="alert"><i class="fa fa-check-circle text-success"></i> Profile image updated successfully</div>'
+                            );
+
+                            // Clear the input field after upload
+                            $(triggerInput).val("");
+
+                            setTimeout(() => {
+                                $(wrapper).find('[role="alert"]').remove();
+                            }, 3000);
+
+                            // Save the profile picture data URL to local storage
+                            if (typeof Storage !== "undefined") {
+                                localStorage.setItem("profilePicture", reader.result);
+                            } else {
+                                alert("Your browser does not support local storage");
+                            }
+                        } else {
+                            // Display an error message for upload failure
+                            holder.find(".pic").attr("src", storedProfilePicture || "");
+                            $(wrapper).append(
+                                '<div class="snackbar show" role="alert"><i class="fa fa-times-circle text-danger"></i> There was an error while uploading! Please try again later.</div>'
+                            );
+
+                            // Clear the input field after upload
+                            $(triggerInput).val("");
+
+                            setTimeout(() => {
+                                $(wrapper).find('[role="alert"]').remove();
+                            }, 3000);
+                        }
+                    }, 1500);
+                };
+            });
+
+
+            if (typeof (Storage) !== "undefined") {
+                // Check if the data is null
+                const petSpecies = localStorage.getItem("petSpecies");
+                if (petSpecies) {
+                    $("#petSpecies").html(petSpecies);
+                }
+                const breed = localStorage.getItem("breed");
+                if (breed) {
+                    $("#breed").html(breed);
+                }
+                const petName = localStorage.getItem("petName");
+                if (petName) {
+                    $("#petName").html(petName);
+                }
+                const petBirthday = localStorage.getItem("petBirthday");
+                if (petBirthday) {
+                    $("#petBirthday").html(petBirthday);
+                }
+                const petGender = localStorage.getItem("petGender");
+                if (petGender) {
+                    $("#petGender").html(petGender);
+                }
+                const weight = localStorage.getItem("weight");
+                if (weight) {
+                    $("#weight").html(weight);
+                }
+                const neutered = localStorage.getItem("neutered");
+                if (neutered) {
+                    $("#neutered").html(neutered);
+                }
+                const diet = localStorage.getItem("diet");
+                if (diet) {
+                    $("#diet").html(diet);
+                }
+                const behavior = localStorage.getItem("behavior");
+                if (behavior) {
+                    $("#behavior").html(behavior);
+                }
+                const medicalHistory = localStorage.getItem("medicalHistory");
+                if (medicalHistory) {
+                    $("#medicalHistory").html(medicalHistory);
+                }
+            }
+
+        </script>
+
+</body>
+
+</html>

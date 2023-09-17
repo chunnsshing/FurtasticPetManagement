@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Furtastic</title>
+  <meta name="author" content="Joeee, Wenkai, QiaoYi, Chunshing">
+  <meta name="description" content="Pet Management Website">
+  <meta name="keywords" content="Pet, Management, Animal, cat, dog">
+  <link rel="icon" href="assets/img/logo/logo.png">
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome icons -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+  <!-- Core theme CSS-->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="css/petData-page.css" />
+</head>
+
+<body id="petDataPage">
+  <!-- Header -->
+  <!-- ============== Loader ============== -->
+  <!-- <div class="loader_bg">
+    <div class="loader"><img src="assets/animation/loading.gif" alt="" /></div>
+  </div> -->
+
+  <!-- ============== Navigation Bar ============== -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top topnavbar">
+    <a class="navbar-brand" href="#page-top">
+      <img src="assets/img/logo/furtasticword4black.png" alt="Furtastic" height="60px" width="200px" id="homelogo">
+    </a>
+    <div class="sharethis-inline-share-buttons" data-title="I love Furtastic! Visit now at: "></div>
+    <div class="custom_menu-btn">
+      <button class="openbtn" onclick="openNav()">
+        <span class="s-1">
+        </span>
+        <span class="s-2">
+        </span>
+        <span class="s-3">
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Navigation Side Bar 2 -->
+  <div class="navOverlay">
+    <div class="overlay-content">
+      <img src="assets/img/logo/furtasticword4black.png" alt="logo" class="navlogo" width="250rem"
+        style="padding-bottom: 20px;" />
+
+      <ul class="barlist">
+        <li>
+          <img src="assets/icon/about.png" alt="home" class="icon" />
+          <a href="index.html">About</a>
+        </li>
+        <li>
+          <img src="assets/icon/dogbowl.png" alt="Bowl" class="icon" />
+          <a href="adoption-page.html">Pet Adoption</a>
+        </li>
+        <li>
+          <img src="assets/icon/pet.png" alt="Bowl" class="icon" />
+          <a href="rehome-page.html">Pet Rehome</a>
+        </li>
+        <li>
+          <img src="assets/icon/paw.png" alt="Lost" class="icon" />
+          <a href="lost-and-found.html">Lost & Found</a>
+        </li>
+        <li>
+          <img src="assets/icon/event.png" alt="Event" class="icon" />
+          <a href="event.html">Event</a>
+        </li>
+        <li>
+          <img src="assets/icon/gallery.png" alt="Event" class="icon" />
+          <a href="gallery.html">Gallery</a>
+        </li>
+        <li>
+          <img src="assets/icon/instagram.png" alt="Event" class="icon" />
+          <a href="socialmedia.html">Social Media</a>
+        </li>
+        <li>
+          <img src="assets/icon/blog.png" alt="Event" class="icon" />
+          <a href="blog.html">Blog</a>
+        </li>
+        <li>
+          <img src="assets/icon/testimonial.png" alt="Event" class="icon" />
+          <a href="testimonial.html">Testimonial</a>
+        </li>
+        <li>
+          <img src="assets/icon/faq.png" alt="Feedback" class="icon" />
+          <a href="faqs.html">FAQs</a>
+        </li>
+        <li>
+          <img src="assets/icon/email.png" alt="Event" class="icon" />
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- End of header -->
+
+  <!-- Page content -->
+  <section>
+    <div class="hero d-flex align-items-center justify-content-center vw-99 vh-100" style="margin-top: 5.7rem;">
+      <div class="container">
+        <div class="row">
+          <div class="hero-content col-md-12 col-xm-12 mx-auto">
+            <!-- End of subheading -->
+            <!-- Heading -->
+            <h1 class="display-3 mb-4">
+              Welcome To <br />
+              <span id="heading">Adoption Page</span>
+            </h1>
+            <!-- End of heading -->
+            <h4>Please contact the uploader for adoption.</h4>
+            <!-- Description -->
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th>Date:</th>
+                  <td id="date"></td>
+                </tr>
+                <tr>
+                  <th>Pet Gender:</th>
+                  <td id="petGender"></td>
+                </tr>
+                <tr>
+                  <th>Species:</th>
+                  <td id="petSpecies"></td>
+                </tr>
+                <tr>
+                  <th>Uploader's First Name:</th>
+                  <td id="firstName"></td>
+                </tr>
+                <tr>
+                  <th>Uploader's Last Name:</th>
+                  <td id="lastName"></td>
+                </tr>
+                <tr>
+                  <th>Uploader's Email:</th>
+                  <td id="email"></td>
+                </tr>
+                <tr>
+                  <th>Uploader's Contact No.:</th>
+                  <td id="contactNo"></td>
+                </tr>
+                <tr>
+                  <th>Location:</th>
+                  <td id="location"></td>
+                </tr>
+                <tr>
+                  <th>Story:</th>
+                  <td id="story"></td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- End of description -->
+            <!-- Button -->
+            <div class="mt-5">
+              <a href="adoption-page.html" class="btn px-5 py-3 mb-5">Back</a>
+            </div>
+            <!-- End of button -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of page content -->
+
+
+  <!--  ====================== FOOTER ====================== -->
+  <footer class="footer small text-center text-white-50">
+    <div class="container-fluid waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <div class="social d-flex justify-content-center align-items-center">
+      <a class="mx-2" href="https://instagram.com/_furrtastic_?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><i
+          class="fab fa-instagram"></i></a>
+      <a class="mx-2" href="https://twitter.com/Furtastic2023"><img src="assets/icon/twitter.svg" alt=""
+          style="width: 1.5rem; height: 1.5rem; padding-bottom: 5px;" /></a>
+      <a class="mx-2" href="https://www.facebook.com/furtastic.2023?mibextid=ZbWKwL"><i
+          class="fab fa-facebook-f"></i></a>
+      <a class="mx-2" href="https://pin.it/7Gfff5a"><i class="fab fa-pinterest"></i></a>
+      <a class="mx-2" href="https://github.com/wthislifehuh/Furtastic"><i class="fab fa-github"></i></a>
+      <a class="mx-2" href="https://t.me/furtastic2023"><i class="fab fa-telegram"></i></a>
+    </div>
+    <div class="container px-4 px-lg-5">
+      <p>
+        &copy; Furtastic 2023 | All Rights Reserved
+      </p>
+    </div>
+  </footer>
+  <!-- END OF FOOTER -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- Javascript file -->
+  <script type="module" src="../js/petData-page.js"></script>
+
+  <!-- Subscribe Social Media Plugins -->
+  <script type="text/javascript"
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=6504b58b572cd20019e849c8&product=inline-share-buttons&source=platform"
+    async="async"></script>
+
+  <!-- Custom JS -->
+  <script>
+    /* ===============================================
+    Toggle Side Bar
+    ============================================== */
+    function openNav() {
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
+
+      var navOverlay = document.querySelector(".navOverlay");
+      var shareButtons = document.querySelector(".sharethis-inline-share-buttons");
+
+      navOverlay.classList.toggle("menu_width");
+
+      if (navOverlay.classList.contains("menu_width")) {
+        shareButtons.style.display = "none";
+      } else {
+        shareButtons.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
